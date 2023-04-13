@@ -1,9 +1,9 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'hello-world'
 ###
-name: demo-deployment
+name: test-deployment
 description: null
-version: e291fade64657a4c1ca28822e9d62a15
+version: 2c73c8020d5f1c5c2a1ca49ad0cef2a8
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 work_pool_name: null
@@ -28,8 +28,17 @@ infrastructure:
 ###
 flow_name: hello-world
 manifest_path: null
-storage: null
-path: /Users/emanueldumitru/Desktop/work_sphere/onyxia/workspace-code/playground/prefect-playground
+storage:
+  repository: https://github.com/emanueldumitru/prefect-playground.git
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: b1bfe6cb-a980-4f91-9185-4d6258d2041f
+  _block_document_name: prefect-repo
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
 entrypoint: hello.py:hello_world
 parameter_openapi_schema:
   title: Parameters
@@ -37,4 +46,4 @@ parameter_openapi_schema:
   properties: {}
   required: null
   definitions: null
-timestamp: '2023-04-13T06:06:12.695623+00:00'
+timestamp: '2023-04-13T06:50:17.930232+00:00'

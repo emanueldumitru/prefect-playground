@@ -52,7 +52,14 @@ Re-add an agent ( separation of concepts, security )
 Blocks for variables like secrets / etc.
 
 Example with a block storing a string variable
+Example with using github as a storage block / config github block and now run this to create a 
+new deployment; sb = storage block
 
+```
+prefect deployment build hello.py:hello_world -n test-deployment -sb github/prefect-repo
+```
+
+Automations and task concurrency / concurrency
 
 
 Deployments 
